@@ -41,6 +41,13 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
+        <ol>
+          {
+          cityList.map((item)=>{
+            return <li key="location1">{cityList.name}</li>
+            })
+          }
+        </ol>
       </div>
     )
   }
