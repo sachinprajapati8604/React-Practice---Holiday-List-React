@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        <ol>
+        <ol type="1">
           {indianLocations.map((item, index) => (
             <li key={`location${index + 1}`}>{item.name}</li>
           ))}
