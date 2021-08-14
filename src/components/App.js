@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class App extends Component {
   constructor(props) {
     super(props);
-
+    
     this.cityList = [
       { name: "Goa", country: "India" },
       { name: "Amsterdam", country: "Netherlands" },
@@ -50,12 +50,11 @@ class App extends Component {
         {/* Do not remove the main div */}
         <ol type="1">
           {indianLocations.map((item, index) => (
-            <li key={`location${index}`}>{item.name}({item.country})</li>
-
+            <li key={`location${index + 1}`}>{item.name}</li>
           ))}
-          {/* {otherLocations.map((item, index) => (
+          {otherLocations.map((item, index) => (
             <li key={`location${idx + index + 1}`}>{item.name}</li>
-          ))} */}
+          ))}
         </ol>
       </div>
     );
